@@ -68,18 +68,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OfficeSamples\OfficeSamples.Web.csproj">
-      <Project>{1F115BC2-00EC-4675-AB79-5D0415FBA57C}</Project>
-      <Name>OfficeSamples.Web</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
     <None Include="TestData\MeetingNotesTemplate.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\OfficeSamples.Web\OfficeSamples.Web.csproj">
+      <Project>{1f115bc2-00ec-4675-ab79-5d0415fba57c}</Project>
+      <Name>OfficeSamples.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="TestData\CorrectMeetingNotesData2.xml" />
     <Content Include="TestData\NoCorrectMeetingNotesData.xml" />

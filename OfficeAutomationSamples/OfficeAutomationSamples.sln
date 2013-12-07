@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web", "OfficeSamples\OfficeSamples.Web.csproj", "{1F115BC2-00EC-4675-AB79-5D0415FBA57C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web", "OfficeSamples.Web\OfficeSamples.Web.csproj", "{1F115BC2-00EC-4675-AB79-5D0415FBA57C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web.Tests", "OfficeSamples.Tests\OfficeSamples.Web.Tests.csproj", "{9E9C281E-76C4-4AFB-A33C-DBD60FA58C9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web.Tests", "OfficeSamples.Web.Tests\OfficeSamples.Web.Tests.csproj", "{9E9C281E-76C4-4AFB-A33C-DBD60FA58C9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
