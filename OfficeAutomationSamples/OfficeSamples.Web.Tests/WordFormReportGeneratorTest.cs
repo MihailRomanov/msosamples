@@ -1,5 +1,4 @@
 ﻿using System;
-using NUnit.Framework;
 using OfficeSamples.WordUtilites;
 using DocumentFormat.OpenXml.Packaging;
 using System.IO;
@@ -7,13 +6,14 @@ using DocumentFormat.OpenXml;
 using System.Linq;
 using System.Xml.Linq;
 using OfficeSamples.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace OfficeSamples.Tests
 {
-	[TestFixture]
+	[TestClass]
 	public class WordFormReportGeneratorTest
 	{
-		[Test]
+		[TestMethod]
 		public void GetAppropriateXmlPartSuccessTest()
 		{
 			var generator = new WordFormReportGenerator();
@@ -26,8 +26,8 @@ namespace OfficeSamples.Tests
 			Assert.AreEqual(serializedData.Length, part.GetStream().Length);
 		}
 
-		[Test]
-		[ExpectedException(ExpectedException = typeof(DocumentGenerationException), ExpectedMessage = "Appropriate XmlPart is not found")]
+		[TestMethod]
+		[ExpectedException(typeof(DocumentGenerationException))]
 		public void GetAppropriateXmlPartFaildTest()
 		{
 			var generator = new WordFormReportGenerator();
@@ -39,7 +39,7 @@ namespace OfficeSamples.Tests
 			Assert.Fail();
 		}
 
-		[Test]
+		[TestMethod]
 		public void GenerateDocumentFromTemplateStreamAndSerializedDataTest()
 		{
 			var generator = new WordFormReportGenerator();
@@ -65,7 +65,7 @@ namespace OfficeSamples.Tests
 			Assert.AreEqual(subject, documentSubject);
 		}
 
-		[Test]
+		[TestMethod]
 		public void GenerateDocumentFromFileAndObjectTest()
 		{
 			var fileName = Path.GetTempFileName();
@@ -92,7 +92,7 @@ namespace OfficeSamples.Tests
 			}
 		}
 
-		[Test]
+		[TestMethod]
 		public void GenerateDocumentFromStreamAndObjectTest()
 		{
 			var subject = "Sample subject";
