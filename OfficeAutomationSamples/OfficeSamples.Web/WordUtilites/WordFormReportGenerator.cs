@@ -61,7 +61,7 @@ namespace OfficeSamples.WordUtilites
 				var schemaRefs = xmlPart.CustomXmlPropertiesPart.DataStoreItem.SchemaReferences;
 				foreach (SchemaReference schemaRef in schemaRefs)
 				{
-					if (namespaces.Contains(schemaRef.Uri))
+					if (namespaces.Contains(schemaRef.Uri.Value))
 					{
 						return xmlPart;
 					}
