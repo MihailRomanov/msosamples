@@ -42,7 +42,7 @@ namespace GenerateWordDocument
 			var serializedDataStream = new MemoryStream();
 
 			var namespaces = new XmlSerializerNamespaces();
-			namespaces.Add("", "urn:MeetingNotes");
+			namespaces.Add("", "");
 			
 			serializer.Serialize(serializedDataStream, meetingNotes, namespaces);
 			serializedDataStream.Seek(0, SeekOrigin.Begin);

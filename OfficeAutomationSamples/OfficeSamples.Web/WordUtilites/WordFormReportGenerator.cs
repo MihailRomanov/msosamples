@@ -27,7 +27,10 @@ namespace OfficeSamples.WordUtilites
 			using (var serializedDataStream = new MemoryStream())
 			{
 				var serializer = new XmlSerializer(typeof(TData));
-				serializer.Serialize(serializedDataStream, data);
+				var namespaces = new XmlSerializerNamespaces();
+				namespaces.Add("", "");
+
+				serializer.Serialize(serializedDataStream, data, namespaces);
 				serializedDataArray = serializedDataStream.ToArray();
 			}
 
