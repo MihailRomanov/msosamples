@@ -1,0 +1,112 @@
+﻿@model OfficeSamples.Models.MeetingNotes
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+
+	<fieldset>
+		<legend>Meeting Notes</legend>
+
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Subject)
+		</div>
+		<div class="editor-field">
+			@Html.TextBoxFor(model => model.Subject, new { @class = "k-textbox", data_bind = "value: Subject" })
+			@Html.ValidationMessageFor(model => model.Subject)
+		</div>
+
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Date)
+		</div>
+		<div class="editor-field">
+			@Html.TextBoxFor(model => model.Date, new { data_role = "datepicker", data_bind = "value: Date" })
+			@Html.ValidationMessageFor(model => model.Date)
+		</div>
+
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Secretary)
+		</div>
+		<div class="editor-field">
+			@Html.TextBoxFor(model => model.Secretary, new { @class = "k-textbox", data_bind = "value: Secretary" })
+			@Html.ValidationMessageFor(model => model.Secretary)
+		</div>
+
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Participants)
+		</div>
+		<div data-role="grid"
+			 data-editable=" { update : true}"
+			 data-columns="[
+				{ field: 'Name', title: 'Name' }, 
+				{ command: [{ className: 'btn-destroy', name: 'destroy'}], width: 100 } ]"
+			 data-toolbar='["create"]'
+			 data-bind="source: Participants">
+		</div>
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Decisions)
+		</div>
+		<div data-role="grid"
+			 data-columns="[
+			 { field: 'Problem' , title: 'Problem' },
+			 { field: 'Solution' , title: 'Solution' },
+			 { field: 'Responsible' , title: 'Responsible' },
+			 { field: 'ControlDate' , title: 'ControlDate', editor: datePickerEditor,
+				template: '#= (data.ControlDate == null)? &quot;&quot; : kendo.toString(data.ControlDate, &quot;d&quot;)#'},
+			 { command: [{ className: 'btn-destroy', name: 'destroy'}], width: 100 } ]"
+			 data-bind="source: Decisions"
+			 data-editable=" { update : true}"
+			 data-toolbar='["create"]'>
+		</div>
+
+		<p>
+			<input id="generate" type="button" value="Generate"  class="k-button"/>
+			<input id="clear" type="button" value="Clear form" class="k-button"/>
+		</p>
+	</fieldset>
+}
+
+@section Scripts {
+	<script>
+		var sourceModel = jQuery.parseJSON('@Html.Raw(Json.Encode(Model ?? new OfficeSamples.Models.MeetingNotes()))');
+		var viewModel;
+		var getDocumentUrl = kendo.template('@HttpUtility.UrlDecode(Url.Action("GetDocument", new { DocumentId = "#=DocumentId#" }))');
+
+		function bindToInitialModel() {
+			viewModel = kendo.observable(sourceModel);
+			kendo.bind($("form"), viewModel);
+		}
+
+		$(document).ready(
+			function () {
+				bindToInitialModel();
+
+				$("#generate").click(
+					function () {
+						if ($("form").valid()) {
+							$.ajax(
+								{
+									url: '@Url.Action("GenerateReport")',
+									type: 'POST',
+									data: kendo.stringify(viewModel.toJSON()),
+									dataType: 'json',
+									processData: false,
+									contentType: "application/json",
+								}).done(
+									function (result) {
+										window.navigate(getDocumentUrl(result));
+									}
+								);
+						}
+					});
+
+				$("#clear").click(bindToInitialModel);
+			});
+
+		function datePickerEditor(container, options) {
+			$('<input data-role="datepicker" data-bind="value:' + options.field + '"/>').appendTo(container);
+		}
+	</script>
+}

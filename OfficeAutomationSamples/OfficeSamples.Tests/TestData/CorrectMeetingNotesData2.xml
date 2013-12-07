@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meetingNotes xmlns="urn:MeetingNotes"
+			  subject="Результаты разработки шаблонов отчетов совещаний"
+			  date="2013-09-21" secretary="Романов М.">
+	<participants>
+		<participant name="Романов М."/>
+		<participant name="Бушмелев С."/>
+		<participant name="Просалов М." />
+	</participants>
+	<decisions>
+		<decision problem="Как результат?" solution="Устраивает!"
+				  responsible="Романов М." controlDate="2013-09-23T00:00:00"/>
+		<decision problem="Что дальше?" solution="Внедряем!!!"
+				  responsible="Романов М." controlDate="2013-12-31T00:00:00" />
+	</decisions>
+</meetingNotes>

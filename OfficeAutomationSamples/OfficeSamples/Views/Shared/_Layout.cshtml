@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - Microsoft Office automation</title>
+	<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+	<link href="~/Content/kendo/2013.2.716/kendo.common.min.css" rel="stylesheet" type="text/css" />
+	<link href="~/Content/kendo/2013.2.716/kendo.default.min.css" rel="stylesheet" type="text/css" />
+	<script src="~/Scripts/jquery-2.0.3.min.js"></script>
+	<script src="~/Scripts/jquery.validate.min.js"></script>
+	<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script src="~/Scripts/kendo/2013.2.716/kendo.web.min.js"></script>
+</head>
+<body>
+	@Html.ActionLink("Microsoft Office automation samples", "Index", "Home", new { Area = "" }, null)
+
+	<div class="container body-content">
+		@RenderBody()
+		<hr />
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Mihail Romanov</p>
+		</footer>
+	</div>
+	@RenderSection("Scripts", required: false)
+</body>
+</html>
