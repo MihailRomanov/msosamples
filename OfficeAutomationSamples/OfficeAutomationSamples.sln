@@ -3,23 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples", "OfficeSamples\OfficeSamples.csproj", "{1F115BC2-00EC-4675-AB79-5D0415FBA57C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web", "OfficeSamples\OfficeSamples.Web.csproj", "{1F115BC2-00EC-4675-AB79-5D0415FBA57C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Tests", "OfficeSamples.Tests\OfficeSamples.Tests.csproj", "{9E9C281E-76C4-4AFB-A33C-DBD60FA58C9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web.Tests", "OfficeSamples.Tests\OfficeSamples.Web.Tests.csproj", "{9E9C281E-76C4-4AFB-A33C-DBD60FA58C9A}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://mihailromanov.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = OfficeSamples.Tests\\OfficeSamples.Tests.csproj
-		SccProjectName1 = OfficeSamples.Tests
-		SccLocalPath1 = OfficeSamples.Tests
-		SccProjectUniqueName2 = OfficeSamples\\OfficeSamples.csproj
-		SccProjectName2 = OfficeSamples
-		SccLocalPath2 = OfficeSamples
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

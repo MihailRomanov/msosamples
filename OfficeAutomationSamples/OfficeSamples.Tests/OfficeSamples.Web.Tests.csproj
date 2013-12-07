@@ -68,9 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OfficeSamples\OfficeSamples.csproj">
+    <ProjectReference Include="..\OfficeSamples\OfficeSamples.Web.csproj">
       <Project>{1F115BC2-00EC-4675-AB79-5D0415FBA57C}</Project>
-      <Name>OfficeSamples</Name>
+      <Name>OfficeSamples.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
