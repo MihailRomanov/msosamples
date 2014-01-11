@@ -13,23 +13,31 @@
 			<r>
 				<drawing>
 					<draw:inline distT="0" distB="0" distL="0" distR="0">
-						<draw:extent cx="720000" cy="720000"/>
+						<draw:extent cx="5940425" cy="3920490"/>
 						<draw:docPr id="1" name="1"/>
+						<draw:cNvGraphicFramePr>
+							<drawmain:graphicFrameLocks noChangeAspect="true"/>
+						</draw:cNvGraphicFramePr>
 						<drawmain:graphic>
 							<drawmain:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
 								<pic:pic>
 									<pic:nvPicPr>
 										<pic:cNvPr id="1" name="1"/>
-										<pic:cNvPicPr />
+										<pic:cNvPicPr>
+										</pic:cNvPicPr>
 									</pic:nvPicPr>
 									<pic:blipFill>
-										<drawmain:blip rel:embed="rId1" />
+										<drawmain:blip rel:embed="rId1"/>
 										<drawmain:stretch>
 											<drawmain:fillRect/>
 										</drawmain:stretch>
 									</pic:blipFill>
 									<pic:spPr>
-										<drawmain:prstGeom prst="rect"/>
+										<drawmain:xfrm>
+											<drawmain:off x="0" y="0"/>
+											<drawmain:ext cx="5940425" cy="3920490"/>
+										</drawmain:xfrm>
+										<drawmain:prstGeom prst="rect" />
 									</pic:spPr>
 								</pic:pic>
 							</drawmain:graphicData>
