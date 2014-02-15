@@ -1,0 +1,50 @@
+<document xmlns="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+					xmlns:draw="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+					xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"
+					xmlns:rel="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+					xmlns:drawmain="http://schemas.openxmlformats.org/drawingml/2006/main">
+	<body>
+		<p>
+			<r>
+				<t>Hello, World!</t>
+			</r>
+		</p>
+		<p>
+			<r>
+				<drawing>
+					<draw:inline distT="0" distB="0" distL="0" distR="0">
+						<draw:extent cx="5940425" cy="3920490"/>
+						<draw:docPr id="1" name="1"/>
+						<draw:cNvGraphicFramePr>
+							<drawmain:graphicFrameLocks noChangeAspect="true"/>
+						</draw:cNvGraphicFramePr>
+						<drawmain:graphic>
+							<drawmain:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+								<pic:pic>
+									<pic:nvPicPr>
+										<pic:cNvPr id="1" name="1"/>
+										<pic:cNvPicPr>
+										</pic:cNvPicPr>
+									</pic:nvPicPr>
+									<pic:blipFill>
+										<drawmain:blip rel:embed="rId1"/>
+										<drawmain:stretch>
+											<drawmain:fillRect/>
+										</drawmain:stretch>
+									</pic:blipFill>
+									<pic:spPr>
+										<drawmain:xfrm>
+											<drawmain:off x="0" y="0"/>
+											<drawmain:ext cx="5940425" cy="3920490"/>
+										</drawmain:xfrm>
+										<drawmain:prstGeom prst="rect" />
+									</pic:spPr>
+								</pic:pic>
+							</drawmain:graphicData>
+						</drawmain:graphic>
+					</draw:inline>
+				</drawing>
+			</r>
+		</p>
+	</body>
+</document>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web", "OfficeSamples.Web\OfficeSamples.Web.csproj", "{1F115BC2-00EC-4675-AB79-5D0415FBA57C}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content controls", "Content controls", "{0C191FF0-45C7-460F-AD35-C7D11B7A4A48}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateWordDocument", "Content controls\GenerateWordDocument\GenerateWordDocument.csproj", "{AEF90676-D192-4558-B5F2-43B426C0371B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OPC", "OPC", "{DB304B70-62C1-4F92-A16E-CB3BBCF27C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackagingAPI", "OPC\PackagingAPI\PackagingAPI.csproj", "{60DFFDC8-7849-4711-9397-FB141B1598D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,11 +33,16 @@ Global
 		{AEF90676-D192-4558-B5F2-43B426C0371B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF90676-D192-4558-B5F2-43B426C0371B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEF90676-D192-4558-B5F2-43B426C0371B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DFFDC8-7849-4711-9397-FB141B1598D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DFFDC8-7849-4711-9397-FB141B1598D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DFFDC8-7849-4711-9397-FB141B1598D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DFFDC8-7849-4711-9397-FB141B1598D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AEF90676-D192-4558-B5F2-43B426C0371B} = {0C191FF0-45C7-460F-AD35-C7D11B7A4A48}
+		{60DFFDC8-7849-4711-9397-FB141B1598D8} = {DB304B70-62C1-4F92-A16E-CB3BBCF27C38}
 	EndGlobalSection
 EndGlobal

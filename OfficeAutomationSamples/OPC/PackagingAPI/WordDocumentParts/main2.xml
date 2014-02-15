@@ -1,0 +1,9 @@
+<document xmlns="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+	<body>
+		<p>
+			<r>
+				<t>Hello, World!</t>
+			</r>
+		</p>
+	</body>
+</document>
