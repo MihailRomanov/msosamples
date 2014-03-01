@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EPAM Systems")]
 [assembly: AssemblyProduct("GenerateWordDocument")]
-[assembly: AssemblyCopyright("Copyright © EPAM Systems 2013")]
+[assembly: AssemblyCopyright("Copyright © EPAM Systems 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("64fbfba6-3d81-4df2-afcb-26e9304e91d4")]
+[assembly: Guid("0c5d4fc8-7e6b-4693-a954-9ac4eb771bc3")]
 
 // Version information for an assembly consists of the following four values:
 //
