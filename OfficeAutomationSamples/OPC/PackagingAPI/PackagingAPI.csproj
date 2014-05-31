@@ -59,6 +59,7 @@
     </Compile>
     <Compile Include="BasePackagingServiceSamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MetadataSamples.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="WordDocumentParts\cat.jpeg" />
@@ -71,6 +72,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestDocuments\TestDocument.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
