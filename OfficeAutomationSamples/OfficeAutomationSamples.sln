@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeSamples.Web", "OfficeSamples.Web\OfficeSamples.Web.csproj", "{1F115BC2-00EC-4675-AB79-5D0415FBA57C}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackagingAPI", "OPC\PackagingAPI\PackagingAPI.csproj", "{60DFFDC8-7849-4711-9397-FB141B1598D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateWordDocument", "Content controls\GenerateWordDocument\GenerateWordDocument.csproj", "{8DC60ED4-4D23-4551-A2D4-C1E9E78C3DF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenXML SDK", "OpenXML SDK", "{8C236904-8439-46A2-A6EA-90630AD2BE76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXMLSdkSamples", "OpenXML SDK\OpenXMLSdkSamples\OpenXMLSdkSamples.csproj", "{520F9D7B-2D39-47D8-B3F0-E56738E6C8EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,12 +41,17 @@ Global
 		{8DC60ED4-4D23-4551-A2D4-C1E9E78C3DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC60ED4-4D23-4551-A2D4-C1E9E78C3DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DC60ED4-4D23-4551-A2D4-C1E9E78C3DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520F9D7B-2D39-47D8-B3F0-E56738E6C8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520F9D7B-2D39-47D8-B3F0-E56738E6C8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520F9D7B-2D39-47D8-B3F0-E56738E6C8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520F9D7B-2D39-47D8-B3F0-E56738E6C8EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8DC60ED4-4D23-4551-A2D4-C1E9E78C3DF7} = {0C191FF0-45C7-460F-AD35-C7D11B7A4A48}
 		{60DFFDC8-7849-4711-9397-FB141B1598D8} = {DB304B70-62C1-4F92-A16E-CB3BBCF27C38}
+		{8DC60ED4-4D23-4551-A2D4-C1E9E78C3DF7} = {0C191FF0-45C7-460F-AD35-C7D11B7A4A48}
+		{520F9D7B-2D39-47D8-B3F0-E56738E6C8EE} = {8C236904-8439-46A2-A6EA-90630AD2BE76}
 	EndGlobalSection
 EndGlobal
