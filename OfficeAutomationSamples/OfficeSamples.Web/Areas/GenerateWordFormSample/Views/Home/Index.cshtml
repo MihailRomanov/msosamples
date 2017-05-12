@@ -95,8 +95,8 @@
 									processData: false,
 									contentType: "application/json",
 								}).done(
-									function (result) {
-										window.navigate(getDocumentUrl(result));
+                                function (result) {
+                                    window.location.href = getDocumentUrl(result);
 									}
 								);
 						}
